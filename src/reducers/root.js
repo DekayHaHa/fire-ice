@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux'
 import { houses } from './houses'
 import { error } from './error'
-import { isLoading } from './isLoading'
+import { loading } from './loading'
 const rootReducer = combineReducers({
   houses,
   error,
-  isLoading
+  isLoading: loading
 })
 
 export default rootReducer
