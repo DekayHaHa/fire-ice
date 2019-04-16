@@ -18,13 +18,14 @@ export class App extends Component {
   }
 
   render() {
-    const { isLoading } = this.props
+    const { isLoading, error } = this.props
     const toRender = isLoading ? <img src={wolf} alt='loading...' /> : this.housesToRender()
     return (
       <div className='App'>
         <div className='App-header'>
           <img src={logo} className='App-logo' alt='logo' />
           <h2>Welcome to Westeros</h2>
+          {error && <p>Error MSG: {error}</p>}
         </div>
         <div className='Display-info'>
           {toRender}

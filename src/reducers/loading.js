@@ -1,7 +1,7 @@
-export const isLoading = (state = false, action) => {
+export const loading = (state = false, action) => {
   switch (action.type) {
     case 'IS_LOADING':
-      return action.bool
+      return action.isLoading
     default:
       return state
   }

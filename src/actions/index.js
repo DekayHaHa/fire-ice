@@ -3,9 +3,9 @@ export const updateHouses = (houses) => ({
   houses
 })
 
-export const isLoading = (bool) => ({
+export const isLoading = (isLoading) => ({
   type: "IS_LOADING",
-  bool
+  isLoading
 })
 
 export const hasError = (error) => ({
